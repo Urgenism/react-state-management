@@ -17,7 +17,7 @@ function App() {
         setStatus("success");
       })
       .catch((err) => {
-        setError(err);
+        setError(err.message);
         setStatus("failed");
       });
   }, []);
